@@ -1,0 +1,110 @@
+sic2019@l4m09u:~$ git clone https://github.com/ThiagoWho42/devops_sic
+Cloning into 'devops_sic'...
+remote: Enumerating objects: 67, done.
+remote: Counting objects: 100% (67/67), done.
+remote: Compressing objects: 100% (49/49), done.
+remote: Total 67 (delta 22), reused 53 (delta 14), pack-reused 0
+Unpacking objects: 100% (67/67), done.
+Checking connectivity... done.
+sic2019@l4m09u:~$ nod -v
+Comando 'nod' não encontrado, você quis dizer:
+ Comando 'mod' do pacote 'monodoc-base' (universe)
+ Comando 'nodm' do pacote 'nodm' (universe)
+ Comando 'nsd' do pacote 'nsd' (universe)
+ Comando 'node' do pacote 'nodejs-legacy' (universe)
+ Comando 'nop' do pacote 'graphviz' (main)
+ Comando 'od' do pacote 'coreutils' (main)
+ Comando 'god' do pacote 'ruby-god' (universe)
+ Comando 'nd' do pacote 'nd' (universe)
+nod: comando não encontrado
+sic2019@l4m09u:~$ yarn istall
+yarn run v1.12.3
+error Couldn't find a package.json file in "/home/sic2019"
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+sic2019@l4m09u:~$ yarn install
+yarn install v1.12.3
+info No lockfile found.
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+success Saved lockfile.
+Done in 0.10s.
+sic2019@l4m09u:~$ yarn install
+yarn install v1.12.3
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.04s.
+sic2019@l4m09u:~$ cd devops_sic/
+sic2019@l4m09u:~/devops_sic$ yarn install
+yarn install v1.12.3
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+info fsevents@1.2.7: The platform "linux" is incompatible with this module.
+info "fsevents@1.2.7" is an optional dependency and failed compatibility check. Excluding it from installation.
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+Done in 10.34s.
+sic2019@l4m09u:~/devops_sic$ yarn start
+yarn run v1.12.3
+$ nodemon index.js
+[nodemon] 1.18.10
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node index.js`
+body-parser deprecated undefined extended: provide extended option index.js:13:17
+Server running in PORT 3000
+^C
+sic2019@l4m09u:~/devops_sic$ git remote add github https://github.com/Isaiastoliveira/Teste.git
+sic2019@l4m09u:~/devops_sic$ 
+sic2019@l4m09u:~/devops_sic$ git remote add github https://github.com/Isaiastoliveira/Teste.git
+fatal: remote github already exists.
+sic2019@l4m09u:~/devops_sic$ git remote add Teste https://github.com/isaiasoliveira1/Teste.git
+sic2019@l4m09u:~/devops_sic$ git remot -v
+git: 'remot' não é um comando git. Veja 'git --help'.
+
+Você quis dizer isso?
+	remote
+sic2019@l4m09u:~/devops_sic$ git remote -v
+Teste	https://github.com/isaiasoliveira1/Teste.git (fetch)
+Teste	https://github.com/isaiasoliveira1/Teste.git (push)
+github	https://github.com/Isaiastoliveira/Teste.git (fetch)
+github	https://github.com/Isaiastoliveira/Teste.git (push)
+origin	https://github.com/ThiagoWho42/devops_sic (fetch)
+origin	https://github.com/ThiagoWho42/devops_sic (push)
+sic2019@l4m09u:~/devops_sic$ git push Teste master
+Username for 'https://github.com': isaiasoliveira1
+Password for 'https://isaiasoliveira1@github.com': 
+Counting objects: 55, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (51/51), done.
+Writing objects: 100% (55/55), 52.50 KiB | 0 bytes/s, done.
+Total 55 (delta 14), reused 0 (delta 0)
+remote: Resolving deltas: 100% (14/14), done.
+To https://github.com/isaiasoliveira1/Teste.git
+ * [new branch]      master -> master
+sic2019@l4m09u:~/devops_sic$ 
+{
+  "name": "modulo01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "nunjucks": "^3.1.7"
+  },
+  "devDependencies": {
+    "eslint": "^5.14.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "nodemon": "^1.18.10"
+  }
+}
+X
+
